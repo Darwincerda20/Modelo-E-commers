@@ -4,8 +4,6 @@ import CartWidget from "./CartWidget";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-
-
 export const NavBar = () => (
     <nav className="navbar navbar-expand-lg  navbar-dark menu shadow fixed-top"> {/* eliminar container */}
       <div className="container">

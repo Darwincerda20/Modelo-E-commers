@@ -8,13 +8,15 @@ import Cart from './Components/Cart';
 import ItemListContainer from './Components/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer';
 import Footer from "./Components/Footer";
+import CartProvider from './Context/CartContext';
 
-const CartContext = React.createContext('');
+
 
 function App() {
   return (
    <>
       <BrowserRouter>
+        <CartProvider>
         <NavBar/>
         <Routes>
           <Route path="/" element={<ItemListContainer/>}></Route>
@@ -23,6 +25,7 @@ function App() {
           <Route path="/Detalle/:DetalleId" element={<ItemDetailContainer/>}></Route>
         </Routes>
         <Footer/>
+        </CartProvider>
       </BrowserRouter>
    </>
 
