@@ -1,10 +1,15 @@
 import './App.css';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import NavBar from './Components/NavBar'
-import Cart from './Components/Cart'
-import ItemListContainer from './Components/ItemListContainer'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import NavBar from './Components/NavBar';
+import Cart from './Components/Cart';
+import ItemListContainer from './Components/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer';
+import Footer from "./Components/Footer";
 
+const CartContext = React.createContext('');
 
 function App() {
   return (
@@ -17,6 +22,7 @@ function App() {
           <Route path="/Cart" element={<Cart/>}></Route>
           <Route path="/Detalle/:DetalleId" element={<ItemDetailContainer/>}></Route>
         </Routes>
+        <Footer/>
       </BrowserRouter>
    </>
 

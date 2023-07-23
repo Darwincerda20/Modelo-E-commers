@@ -4,6 +4,41 @@
     box-sizing: border-box;
 }
 
+.App {
+    text-align: center;
+}
+
+/******************************** Estilos para el Navbar *********************************/
+.navbar {
+    background-color: #333;
+  }
+  
+  .navbar-brand {
+    font-size: 25px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .notificacion {
+    background-color: rgb(179, 255, 0);
+    color: #020202;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+  .container {
+    align-items: center;
+  }
+  
+  img {
+    margin-right: 10px;
+}
 
 /******************************* contador *****************************/
 .counter {
@@ -13,3 +48,30 @@
     padding: 1rem;
     text-align: center;
 }
+
+/********************************** Estilos para las tarjetas **********************************/
+/* Estilos para la fila */
+.CardItem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para cada tarjeta */
+  .Card {
+    margin: 10px; /* Margen entre las tarjetas */
+    background-color: white;
+    padding: 15px; /* Relleno para dar espacio a los contenidos internos */
+    box-sizing: border-box; /* Incluir el borde y relleno en el tamaño total */
+    text-align: center; /* Centrar el contenido horizontalmente */
+  }
+  
+  .ItemImg {
+    width: 100%; /* Asegura que todas las imágenes tengan el mismo ancho */
+    height: 200px; /* Mantiene la proporción de aspecto */
+    margin-bottom: 10px; /* Espacio entre la imagen y el contenido de la tarjeta */
+  }
+  
+  .card-text {
+    margin: 0;
+  }

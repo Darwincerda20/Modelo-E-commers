@@ -1,19 +1,22 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom'
 import CartWidget from "./CartWidget";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
-export const NavBar = () => {
-  
+
+
+export const NavBar = () => (
     <nav className="navbar navbar-expand-lg  navbar-dark menu shadow fixed-top"> {/* eliminar container */}
       <div className="container">
         <Link to='/'> {/* Link directo a inicio o reset del filtro */}
-        <img src="./Logo Empresa DC.png" alt="LogoEmpresa_Nav" width="60px" />
-        <a className="navbar-brand" href="MantencionesDC">
+        <img src='./Logo Empresa DC.png' alt="LogoEmpresa_Nav" width="60px" />
+        <Link className="navbar-brand" href="MantencionesDC">
           Mantenciones DC
-        </a>
+        </Link>
         </Link>
         <button className="navbar-toggler"type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span className="navbar-toggler-icon "></span>
+          <span className="navbar-toggler-icon "></span> 
         </button>
         <div className="Categories">
         <div className="collapse navbar-collapse" id="mynavbar">
@@ -38,5 +41,5 @@ export const NavBar = () => {
         </div>
       </div>
     </nav>
-  }
+)
 export default NavBar;
